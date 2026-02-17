@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#121212">
@@ -12,13 +11,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textSize="40sp"
+        android:textSize="48sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
+        android:letterSpacing="0.05"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/progressBar"
+        app:layout_constraintBottom_toTopOf="@id/tvTagline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvTagline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your study companion"
+        android:textSize="16sp"
+        android:textColor="#BB86FC"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/progressBar"
+        android:layout_marginTop="8dp"/>
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -26,25 +39,26 @@
         android:layout_height="wrap_content"
         android:indeterminate="true"
         android:indeterminateTint="#BB86FC"
-        app:layout_constraintTop_toBottomOf="@id/tvAppName"
+        app:layout_constraintTop_toBottomOf="@id/tvTagline"
         app:layout_constraintBottom_toTopOf="@id/btnGetStarted"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="32dp"/>
 
     <Button
         android:id="@+id/btnGetStarted"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="56dp"
         android:text="@string/get_started"
         android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
         android:backgroundTint="#BB86FC"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginBottom="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="64dp"
-        tools:ignore="VisualLintButtonSize" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
