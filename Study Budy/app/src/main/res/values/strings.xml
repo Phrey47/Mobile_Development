@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Study Budy</string>
+    <string name="get_started">Get Started</string>
+    <string name="login">Login</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="register_prompt">Don\'t have an account? Register</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="my_subjects">My Subjects</string>
+    <string name="my_profile">My Profile</string>
+    <string name="subjects_title">My Subjects</string>
+    <string name="subject_math">📚 Mathematics</string>
+    <string name="subject_science">📚 Science</string>
+    <string name="subject_english">📚 English</string>
+    <string name="profile_title">My Profile</string>
+    <string name="student_name">Student Name</string>
+    <string name="student_email">student@email.com</string>
+    <string name="back_to_dashboard">Back to Dashboard</string>
 </resources>
