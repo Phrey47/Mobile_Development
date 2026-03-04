@@ -7,7 +7,9 @@ An Android app that displays the Academic Department name
 and shows the Department Chairwoman's name when a button is clicked.
 
 ### Screenshots
+Displaying student ID
 <img width="363" height="723" alt="Part1_ID" src="https://github.com/user-attachments/assets/7486bb93-ca9c-4db1-a13c-184225b42c41" />
+Displaying the Chairwoman
 <img width="355" height="783" alt="Part_1_Chairwoman" src="https://github.com/user-attachments/assets/900cacae-af8d-4139-be8d-2c5e7ace9843" />
 
 ---
