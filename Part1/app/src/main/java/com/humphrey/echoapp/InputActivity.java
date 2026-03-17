@@ -30,13 +30,5 @@ public class InputActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-       Button btnShare = findViewById(R.id.btnShare);
-       btnShare.setOnClickListener(v -> {
-           String message = etMessage.getText().toString();
-           Intent shareIntent = new Intent(Intent.ACTION_SEND);
-           shareIntent.setType("text/plain");
-           shareIntent.putExtra(Intent.EXTRA_TEXT, message);
-           startActivity(Intent.createChooser(shareIntent, "Share via..."));
-       });
     }
 }
