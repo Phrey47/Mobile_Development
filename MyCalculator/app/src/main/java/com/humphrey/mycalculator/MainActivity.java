@@ -59,13 +59,13 @@ public class MainActivity extends AppCompatActivity {
         btnCustom    = findViewById(R.id.btnCustom);
 
         // ── Restore state if app was backgrounded ──
-        if (savedInstanceState != null) {
-            operandA       = savedInstanceState.getDouble("operandA");
-            operandB       = savedInstanceState.getDouble("operandB");
-            operator       = savedInstanceState.getString("operator");
-            justCalculated = savedInstanceState.getBoolean("justCalculated");
-            tvDisplay.setText(savedInstanceState.getString("display"));
-        }
+//        if (savedInstanceState != null) {
+//            operandA       = savedInstanceState.getDouble("operandA");
+//            operandB       = savedInstanceState.getDouble("operandB");
+//            operator       = savedInstanceState.getString("operator");
+//            justCalculated = savedInstanceState.getBoolean("justCalculated");
+//            tvDisplay.setText(savedInstanceState.getString("display"));
+//        }
 
         // ── Number button listeners ──
         btn0.setOnClickListener(v -> appendToDisplay("0"));
